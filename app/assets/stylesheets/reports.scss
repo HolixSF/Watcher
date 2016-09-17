@@ -20,5 +20,40 @@ $primary_dark_wat: #1881f3;
 }
 
 .center {
-	
+	margin: 0 auto;
+}
+
+.title {
+	padding-top: 100px;
+	margin: 0 auto; 
+	text-align: center;
+}
+
+.title h1 {
+	font-size: 5.0em;
+  color: white;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+.phrase {
+	display: inline-block;
+}
+
+.phrase-input {
+	display: inline-block;
+}
+
+.phrase-input span {
+	outline: none;
+	background: none;
+	font-size: 5.0em;
+	margin-top: 53.6px;
+	margin-bottom: 53.6px;
+	padding-left: 15px;
+	color: $splash_wat;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
 }
