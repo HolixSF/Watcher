@@ -1,0 +1,119 @@
+// Place all the styles related to the reports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$white_wat: #f6f7ff;
+$dark_blue_wat: #0d2a33;
+$splash_wat: #ec2660;
+$primary_wat: #4296f6;
+$primary_dark_wat: #1881f3;
+
+.container {
+
+}
+
+.spalsh_image_container {
+	width: 100%;
+	height: 600px;
+	background-image: url("/assets/background.jpeg");
+	background-size: cover;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.title {
+	padding-top: 100px;
+	margin: 0 auto; 
+	text-align: center;
+}
+
+.title h1 {
+	font-size: 5.0em;
+  color: white;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+.phrase {
+	display: inline-block;
+}
+
+.phrase-input {
+	display: inline-block;
+}
+
+.phrase-input span {
+	outline: none;
+	background: none;
+	font-size: 5.0em;
+	margin-top: 53.6px;
+	margin-bottom: 53.6px;
+	padding-left: 15px;
+	color: $splash_wat;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+.form_container {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.form_container input {
+	background: white;
+	opacity: 0.5;
+	border: none;
+	font-size: 1.2em;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.form_container button {
+	margin-top: 50px;
+	background-color: $primary_dark_wat;
+	border: none;
+	border-radius: 10px;
+	font-size: 1.2em;
+	color: white;
+	height: 40px;
+	width: 130px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.divider {
+	height: 50px;
+	background-color: white;
+
+}
+
+.report_container_shadow1 {
+	background-color: #07171c;
+	width: 93%;
+	height: 13px;
+	// border-top-left-radius: 15px; 
+	// border-top-right-radius: 15px; 
+	margin: 0 auto;
+}
+
+.report_container_shadow2 {
+	background-color: #091d23;
+	width: 97%;
+	height: 15px;
+	// border-top-left-radius: 15px; 
+	// border-top-right-radius: 15px; 
+	margin: 0 auto;
+}
+
+
+.report_container {
+	background-color: $dark_blue_wat;
+	height: 100px;
+	// border-top-left-radius: 20px; 
+	// border-top-right-radius: 20px; 
+}
+
