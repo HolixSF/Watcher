@@ -96,24 +96,101 @@ $primary_dark_wat: #1881f3;
 	width: 93%;
 	height: 13px;
 	// border-top-left-radius: 15px; 
-	// border-top-right-radius: 15px; 
+	// border-top-right-radius: 15px;
+	opacity: 0.5; 
 	margin: 0 auto;
+	// border-top: 1px;
+	// border-right: 0px;
+	// border-left: 0px;
+	// border-bottom: 0px;
+	// border-style: solid;
+	// border-color: $splash_wat;
+	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .report_container_shadow2 {
 	background-color: #091d23;
 	width: 97%;
 	height: 15px;
+	opacity: 0.7;
+	// border-top: 3px;
+	// border-right: 0px;
+	// border-left: 0px;
+	// border-bottom: 0px;
+	// border-style: solid;
+	// border-color: $splash_wat;
 	// border-top-left-radius: 15px; 
 	// border-top-right-radius: 15px; 
+	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	margin: 0 auto;
+
 }
 
 
 .report_container {
 	background-color: $dark_blue_wat;
 	height: 100px;
+	border-top: 3px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-style: solid;
+	border-color: $splash_wat;
 	// border-top-left-radius: 20px; 
-	// border-top-right-radius: 20px; 
+	// border-top-right-radius: 20px;
+	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+}
+
+.report_icon_background {
+	background-color: $primary_wat;
+	border: 2px;
+	border-style: solid;
+	border-color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: 750px;
+	left: 48%; 
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.report_icon {
+	width: 50px;
+	height: 50px;
+	background-image: url("/assets/small_icon.png");
+	background-size: cover;
+	padding-top: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+
+
+.the_watch_list_title {
+	text-align: center;
+	color: white;
+	padding-top: 8%;
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
+}
+.the_watch_list_title h1 {
+	font-size: 2.5em;
+}
+
+.segment_map {
+	padding-top: 10%;
+	width: 100%;
+	background-color: $dark_blue_wat;
+}
+.map_container {
+	width: 80%;
+	margin: 0 auto;
+	background-color: $dark_blue_wat;
+}
+
+#map {
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
