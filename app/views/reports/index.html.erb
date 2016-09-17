@@ -1,10 +1,50 @@
 <div class="container">
 	<div class="spalsh_image_container">
 			<div class="center">
-				<form>
-					<input type="text" name="query">
-					<input type="submit" value="Get Report">
-				</form>
+				<div class="title">
+					<div class="phrase">
+						<h1>
+							Prevent 
+						</h1>
+					</div>
+					<div class="phrase-input">
+						<span contenteditable="true" class="phase_input">Suicide</span>
+					</div>
+				</div>
+				<div class="form_container">
+					<form class="query-form hidden">
+						<input type="text" name="query">
+						<br>
+						<button type="button">
+							Get Report
+						</button>
+					</form>
+				</div>
 			</div>
 	</div>
 </div>
+
+</div>
+
+
+
+
+<div>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+    <style>
+      #map {width:100%; height: 500px; }
+    </style>
+
+    <div id='map'></div>
+    <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoidGNodWE5MyIsImEiOiJjaXQ3ankweGwwOWk0MnpwMWtteXZiZDZ6In0.OzMTTCLho3ssVmn4blTBNA';
+    var map = L.mapbox.map('map', 'mapbox.streets')
+        .setView([37.77, -122.4194], 10);
+    </script>
+
+<div>
+>>>>>>> dev
