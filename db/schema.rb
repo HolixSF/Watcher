@@ -10,9 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160917213035) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "tweets", force: :cascade do |t|
+    t.string "name"
+    t.string "handle"
+    t.text   "content"
+    t.float  "longitude"
+    t.float  "latitude"
+    t.date   "date_tweeted"
+    t.float  "anger"
+    t.float  "disgust"
+    t.float  "fear"
+    t.float  "joy"
+    t.float  "sadness"
+    t.float  "analytical"
+    t.float  "confident"
+    t.float  "tentative"
+    t.float  "openness"
+    t.float  "conscientiousness"
+    t.float  "extraversion"
+    t.float  "agreeableness"
+    t.float  "emotional_range"
+  end
 
 end
