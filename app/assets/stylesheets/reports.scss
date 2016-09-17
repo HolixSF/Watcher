@@ -1,0 +1,20 @@
+// Place all the styles related to the reports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$white_wat: #f6f7ff;
+$dark_blue_wat: #0d2a33;
+$splash_wat: #ec2660;
+$primary_wat: #4296f6;
+$primary_dark_wat: #1881f3;
+
+.container {
+
+}
+
+.spalsh_image_container {
+	width: 100%;
+	height: 700px;
+	background-image: url("/assets/background.jpeg");
+	background-size: cover;
+}
