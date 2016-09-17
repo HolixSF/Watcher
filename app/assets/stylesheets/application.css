@@ -18,7 +18,28 @@
  	margin: 0;
  	padding: 0;
  	font-family: 'Montserrat', sans-serif;
+  width: 100%;
  }
+
+ a:link {
+    text-decoration: none;
+    color: black
+}
+
+a:visited {
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ec2660;
+}
+
+a:active {
+    text-decoration: none;
+    color: black
+}
 
 .navigation_container {
 	width: 100%;
@@ -34,7 +55,7 @@
 
 .icon_text {
 	color: #0d2a33;
-	float: left; 
+	float: left;
 }
 
 .icon_text p {
@@ -58,4 +79,58 @@
 	margin: 10px;
 }
 
+.main-g-container {
+  width: 100%;
+}
 
+#big-donut {
+  display: inline-block;
+  width: 265px;
+  height: 265px;
+}
+
+.graph-container {
+  margin: 0 auto;
+  width: 60%;
+  padding: 80px;
+}
+
+.donut-container {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+}
+
+.text-right {
+  float: right;
+  border: solid black 1px;
+}
+
+.text-left {
+  float: left;
+  border: solid black 1px;
+
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
