@@ -49,4 +49,13 @@
 	float: left;
 }
 
+.right_container {
+	float: right;
+}
+
+.right_container p {
+	display: inline-block;
+	margin: 10px;
+}
+
 
