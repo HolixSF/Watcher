@@ -4,7 +4,7 @@
 				<div class="title">
 					<div class="phrase">
 						<h1>
-							Prevent 
+							Prevent
 						</h1>
 					</div>
 					<div class="phrase-input">
@@ -47,4 +47,109 @@
     </script>
 
 <div>
->>>>>>> dev
+
+<div class="main-g-container">
+	<div class="graph-container">
+		<div class="donut-container">
+	    <canvas id="myChart"></canvas>
+	  </div>
+	  <div id="big-donut">
+	    <canvas id="myChart2"></canvas>
+	  </div>
+	  <div class="donut-container">
+	    <canvas id="myChart3"></canvas>
+	  </div>
+	  <script>
+	    var ctx = document.getElementById("myChart");
+	    var doughnutOptions = {
+	      responsive: true,
+	      maintainAspectRatio: false,
+	      legend: {
+	            display: false,
+	          }
+	    };
+	    var data = {
+	        labels: [
+	            "Red",
+	            "Blue",
+	            "Yellow"
+	        ],
+	        datasets: [
+	            {
+	                data: [300, 50, 100],
+	                backgroundColor: [
+	                    "#FF6384",
+	                    "#36A2EB",
+	                    "#FFCE56"
+	                ],
+	                hoverBackgroundColor: [
+	                    "#FF6384",
+	                    "#36A2EB",
+	                    "#FFCE56"
+	                ]
+	            }]
+	    };
+	    var myDoughnutChart = new Chart(ctx, {
+	        type: 'doughnut',
+	        data: data,
+	        options: doughnutOptions
+	    });
+
+	    var ctx = document.getElementById("myChart2");
+	    var data = {
+	        labels: [
+	            "Red",
+	            "Blue",
+	            "Yellow"
+	        ],
+	        datasets: [
+	            {
+	                data: [100, 200, 50],
+	                backgroundColor: [
+	                    "#FF6384",
+	                    "#36A2EB",
+	                    "#FFCE56"
+	                ],
+	                hoverBackgroundColor: [
+	                    "#FF6384",
+	                    "#36A2EB",
+	                    "#FFCE56"
+	                ]
+	            }]
+	    };
+	    var myDoughnutChart = new Chart(ctx, {
+	        type: 'doughnut',
+	        data: data,
+	        options: doughnutOptions
+	    });
+
+	    var ctx = document.getElementById("myChart3");
+	    var data = {
+	        labels: [
+	            "Red",
+	            "Blue",
+	            "Yellow"
+	        ],
+	        datasets: [
+	            {
+	                data: [50, 300, 100],
+	                backgroundColor: [
+	                    "#FF6384",
+	                    "#36A2EB",
+	                    "#FFCE56"
+	                ],
+	                hoverBackgroundColor: [
+	                    "#FF6384",
+	                    "#36A2EB",
+	                    "#FFCE56"
+	                ]
+	            }]
+	    };
+	    var myDoughnutChart = new Chart(ctx, {
+	        type: 'doughnut',
+	        data: data,
+	        options: doughnutOptions
+	    });
+	  </script>
+	</div>
+</div>
