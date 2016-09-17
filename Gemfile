@@ -32,6 +32,8 @@ gem 'chart-js-rails'
 
 gem "typedjs-rails", "~> 1.0.4"
 
+gem 'faker'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
