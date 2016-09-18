@@ -10,9 +10,9 @@ $(document).ready(function() {
     }
   });
 
-
   centerMap();
   popups();
+
 $(".segment_map").on('click', ".report", graphGenerate);
 $(".segment_map").on('click', ".report", function() {
     $('html, body').animate({
@@ -20,9 +20,8 @@ $(".segment_map").on('click', ".report", function() {
     }, 500);
 });
 
-
-
-
+$(".segment_map").on('click', ".report", buttonGenerate);
+$(".graph-container").on('click', "#alert", sendAlerts);
 
 });
 
@@ -199,7 +198,12 @@ var graphGenerate = function () {
 //     $('html,body').animate({scrollTop: divTag.offset().top},'slow');
 // }
 
+// Send Twilio Alerts
+var buttonGenerate = function () { 
+  $("#buttonspace").append("<p id='description'>Press button to alert friends, family, and closest police station</p>");
+  // $("#alertbutton").append("<button id='alert'>Send Alerts</button>");
+}
 
-
-
-
+var sendAlerts = function () { 
+  alert("Alert has been sent family, friends, and law enforcement");
+}
