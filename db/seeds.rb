@@ -1,16 +1,14 @@
 require 'faker'
-# require_relative './hatetweets.txt'
-# require_relative './suicidetweets.txt'
 
-20.times do
-  Tweet.create(
-    name: "John Doe",
-    handle: "@JohnDoe",
-    content: "TweetTweetTweetTweetTweet",
-    longitude: rand(-122.409228...-122.385195),
-    latitude: rand(37.780988...37.788297)
-     )
-end
+# 20.times do
+#   Tweet.create(
+#     name: "John Doe",
+#     handle: "@JohnDoe",
+#     content: "TweetTweetTweetTweetTweet",
+#     longitude: rand(-122.409228...-122.385195),
+#     latitude: rand(37.780988...37.788297)
+#      )
+# end
 
 # Pending parameters for the user table 
 users = 20.times.map do
@@ -57,15 +55,15 @@ arrayhate = [
   "White cops should be banned"
 ]
 
-arrayhate.each do |line|
-  Tweet.create!(
-    :name => Faker::Name.first_name,
-    :handle => "@" + Faker::Name.first_name,
-    content: line,
-    longitude: rand(-122.409228...-122.385195),
-    latitude: rand(37.780988...37.788297)
-     )
-end 
+# arrayhate.each do |line|
+#   Tweet.create!(
+#     :name => Faker::Name.first_name,
+#     :handle => "@" + Faker::Name.first_name,
+#     content: line,
+#     longitude: rand(-122.409228...-122.385195),
+#     latitude: rand(37.780988...37.788297)
+#      )
+# end 
 
 # f.close
 
@@ -106,14 +104,53 @@ arraysuicide = [
   "You all will be sorry when I'm gone."
 ]
 
+times = [ 
+  "2016-09-05 17:03:00",
+  "2016-09-12 20:010:00",
+  "2016-09-11 19:08:00",
+  "2016-09-03 17:03:00",
+  "2016-09-05 02:33:00",
+  "2016-09-06 22:45:00",
+  "2016-09-10 23:13:00",
+  "2016-09-12 23:11:00",
+  "2016-09-08 22:34:00",
+  "2016-09-17 19:07:00"
+]
+
 arraysuicide.each do |line|
   Tweet.create(
     :name => Faker::Name.first_name,
     :handle => "@" + Faker::Name.first_name,
     content: line,
-    longitude: rand(-122.409228...-122.385195),
-    latitude: rand(37.780988...37.788297)
+    longitude: rand(-122.509228...-122.385195),
+    latitude: rand(37.700988...37.781297),
+    date_tweeted: times.sample
      )
 end 
 
-# f.close
+# Neighborhood Specific 
+#Tenderloin
+arraysuicide[0..20].each do |line|
+  Tweet.create(
+    :name => Faker::Name.first_name,
+    :handle => "@" + Faker::Name.first_name,
+    content: line,
+    longitude: rand(-122.419...-122.400),
+    latitude: rand(37.7801...37.7809),
+    date_tweeted: times.sample
+     )
+end 
+
+# Bayview
+arraysuicide[11..30].each do |line|
+  Tweet.create(
+    :name => Faker::Name.first_name,
+    :handle => "@" + Faker::Name.first_name,
+    content: line,
+    longitude: rand(-122.393...-122.363),
+    latitude: rand(37.7230...37.7370),
+    date_tweeted: times.sample
+     )
+end 
+
+
