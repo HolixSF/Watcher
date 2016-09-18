@@ -25,7 +25,7 @@ $primary_dark_wat: #1881f3;
 
 .title {
 	padding-top: 100px;
-	margin: 0 auto; 
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -81,7 +81,7 @@ $primary_dark_wat: #1881f3;
 	font-size: 1.2em;
 	color: white;
 	height: 40px;
-	width: 130px;
+	width: 190px;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -95,9 +95,9 @@ $primary_dark_wat: #1881f3;
 	background-color: #07171c;
 	width: 93%;
 	height: 13px;
-	// border-top-left-radius: 15px; 
+	// border-top-left-radius: 15px;
 	// border-top-right-radius: 15px;
-	opacity: 0.5; 
+	opacity: 0.5;
 	margin: 0 auto;
 	// border-top: 1px;
 	// border-right: 0px;
@@ -119,26 +119,37 @@ $primary_dark_wat: #1881f3;
 	// border-bottom: 0px;
 	// border-style: solid;
 	// border-color: $splash_wat;
-	// border-top-left-radius: 15px; 
-	// border-top-right-radius: 15px; 
+	// border-top-left-radius: 15px;
+	// border-top-right-radius: 15px;
 	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	margin: 0 auto;
 
 }
 
+.colored {
+	background-color: $dark_blue_wat;
+}
 
 .report_container {
-	background-color: $dark_blue_wat;
-	height: 100px;
+	flex-grow: 1;
 	border-top: 3px;
 	border-right: 0px;
 	border-left: 0px;
 	border-bottom: 0px;
 	border-style: solid;
 	border-color: $splash_wat;
-	// border-top-left-radius: 20px; 
-	// border-top-right-radius: 20px;
-	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+	position: relative;
+	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.center_icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-30px); 
+	top: -30px;
 }
 
 .report_icon_background {
@@ -149,9 +160,6 @@ $primary_dark_wat: #1881f3;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	position: absolute;
-	top: 1095px;
-	left: 48%; 
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -165,11 +173,15 @@ $primary_dark_wat: #1881f3;
 	margin: 0 auto;
 }
 
+.vertical_flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 .the_watch_list_title {
 	text-align: center;
 	color: white;
-	padding-top: 8%;
 	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
                10px 20px 5px rgba(0,0,0,0.05),
                -10px 20px 5px rgba(0,0,0,0.05);
@@ -179,19 +191,20 @@ $primary_dark_wat: #1881f3;
 }
 
 .segment_map {
-	padding-top: 10%;
+	// padding-top: 10%;
 	width: 100%;
-	background-color: $dark_blue_wat;
+	background-color: white;
 }
 .map_container {
-	width: 80%;
+	width: 100%;
+	height: 400px;
 	margin: 0 auto;
 	background-color: $dark_blue_wat;
 }
 
 #map {
 	border-radius: 10px;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	// box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .graph-container {
@@ -200,8 +213,9 @@ $primary_dark_wat: #1881f3;
 }
 
 .segment_below_graph {
-	height: 500;
-	background-color: red;
+	padding-top: 60px;
+	background-color: #ec2660;
+	height: 2200px;
 }
 
 .metweet {
@@ -209,13 +223,101 @@ $primary_dark_wat: #1881f3;
 	width: 64px;
 	height: 64px;
 	background-size: cover;
-	position:fixed;
+	position: fixed;
 	top: -23px;
 	left: -23px;
 }
+
+
+.metweetleft {
+	background-image: url("/assets/tweet.png");
+	width: 64px;
+	height: 64px;
+	background-size: cover;
+	position:fixed;
+	top: -100px;
+	left: -200px;
+}
+
+
+.metweetright {
+	background-image: url("/assets/tweet.png");
+	width: 90px;
+	height: 90px;
+	background-size: cover;
+	position: absolute;
+	margin-left: 79%;
+	margin-top: 15px;
+}
+
 
 .popup h3 {
 	text-align: center;
 }
 
+#report_button {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 11s;
+}
 
+.splash_container {
+	border: 4px;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-style: solid;
+	border-color: $splash_wat;
+	text-align: center;
+}
+
+.item {
+	display: inline-block;
+	padding: 30px;
+	// padding-left: 50px;
+	// padding-right: 50px;
+}
+
+.arrow {
+	width: 18px;
+	height: 18px;
+	background-image: url("/assets/right-arrow.png");
+	background-repeat: no;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+.item p {
+	width: 180px;
+	word-wrap: break-word;
+	text-align: left;
+}
+
+.tweet_splash {
+	background-image: url("/assets/twitter_icon.png");
+	width: 132px;
+	height: 132px;
+}
+
+.ibm_splash {
+	background-image: url("/assets/ibm_icon2.png");
+	width: 132px;
+	height: 132px;
+}
+
+.uni_splash {
+	background-image: url("/assets/uc_icon.png");
+	width: 122px;
+	height: 122px;
+	background-size: cover;
+}
+
+.theWatch_splash {
+	background-image: url("/assets/icon_report_icon.png");
+	width: 132px;
+	height: 132px;
+}
+
+
+.full_height_segment {
+	height: 100vh;
+}

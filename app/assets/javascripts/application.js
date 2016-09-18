@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require Chart
 //= require typed
+//= require scrollReveal
 //= require_tree .
+

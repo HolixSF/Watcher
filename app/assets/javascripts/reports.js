@@ -14,6 +14,7 @@ $(document).ready(function() {
   popups();
 
 $(".segment_map").on('click', ".report", graphGenerate);
+
 $(".segment_map").on('click', ".report", function() {
     $('html, body').animate({
         scrollTop: $(".graph-container").offset().top
@@ -29,8 +30,11 @@ $(".graph-container").on('click', "#alert", sendAlerts);
 
 var centerMap = function () {
   map.featureLayer.on('click', function(e) {
-        map.panTo(e.layer.getLatLng());
-    });
+    latlng = e.layer.getLatLng();
+    latlng.lat += 0.0022; // Magic number
+    map.panTo(latlng);
+  });
+
 }
 
 
