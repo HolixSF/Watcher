@@ -8,21 +8,32 @@
 						</h1>
 					</div>
 					<script>
-	  				$(function(){
-	      			$(".phase_input").typed({
-	        			strings: ["Violence", "Cyber Bully", "Domestic Violence", "Drug Abuse", "Suicide"],
-	        			typeSpeed: 10,
-								startDelay: 5,
-	      			});
-	  				});
+					$(function(){
+						$(".phase_input").typed({
+							strings: ["Violence", "Cyber Bullying", "Domestic Abuse", "Suicide"],
+							typeSpeed: 10,
+							startDelay: 0,
+						});
+					});
 					</script>
 					<div class="phrase-input">
 						<span contenteditable="true" class="phase_input">Suicide</span>
 					</div>
 				</div>
 				<div class="form_container">
+					<script>
+					$(function(){
+						$("#search-box").click(function(){
+							$("#search-box").typed({
+								strings: ["I feel empty", " I’m impulsive", "Stop cutting myself", "I’m being bullied"],
+								typeSpeed: 10,
+								startDelay: 0,
+							});
+						});
+					});
+					</script>
 					<form class="query-form hidden">
-						<input type="text" name="query">
+						<input id="search-box" type="text" name="query">
 						<br>
 						<button type="button">
 							Get Report
@@ -32,7 +43,7 @@
 			</div>
 	</div>
 </div>
-<div class="divider">	
+<div class="divider">
 </div>
 
 <!-- reports start here -->
@@ -188,4 +199,3 @@
 		</p>
 	</div>
 </div>
-
