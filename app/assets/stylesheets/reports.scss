@@ -9,7 +9,15 @@ $primary_wat: #4296f6;
 $primary_dark_wat: #1881f3;
 
 .container {
+	color: white;
+}
 
+.ahhhh {
+	text-align: center;
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+               10px 20px 5px rgba(0,0,0,0.05),
+               -10px 20px 5px rgba(0,0,0,0.05);
+               color: white;
 }
 
 .spalsh_image_container {
