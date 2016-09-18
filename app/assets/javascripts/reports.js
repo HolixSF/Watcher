@@ -14,7 +14,6 @@ $(document).ready(function() {
   centerMap();
   popups();
 $(".segment_map").on('click', ".report", graphGenerate);
-
 });
 
 // "img.leaflet-marker-icon .leaflet-zoom-animated .leaflet-clickable"
@@ -23,6 +22,7 @@ var centerMap = function () {
   map.featureLayer.on('click', function(e) {
         map.panTo(e.layer.getLatLng());
     });
+
 }
 
 // var graphGenerate = function () { 
