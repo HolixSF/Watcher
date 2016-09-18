@@ -97,8 +97,18 @@
 		    <canvas id="myChart3"></canvas>
 		  </div>
 	  </div>
+
+	  <div id="buttonspace">
+	  	<p id="buttondescribe"></p>
+	  	<div id="alertbutton">
+	  		<form id="formalert" method="Post" action="/">
+	  			<button id='alert'>Send Alerts</button>
+	  		</form>
+	  	</div>
+	  </div>
 	</div>
 </div>
+
 <div class="segment_below_graph">
 	<% @tweet_list.each_with_index do |t, i| %>
 		<div class="tweet-item <%= i.even? ? 't-left' : 't-right' %>" >

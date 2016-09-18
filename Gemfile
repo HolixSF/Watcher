@@ -37,7 +37,10 @@ gem "typedjs-rails", "~> 1.0.4"
 
 gem 'faker'
 
+gem 'twilio-ruby'
+
 gem "scrollreveal-rails"
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

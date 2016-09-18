@@ -10,15 +10,19 @@ $(document).ready(function() {
     }
   });
 
-
   centerMap();
   popups();
+
 $(".segment_map").on('click', ".report", graphGenerate);
-  // $(".segment_map").on('click', ".report", function() {
-  //     $('html, body').animate({
-  //         scrollTop: $(".graph-container").offset().top
-  //     }, 500);
-  // });
+
+$(".segment_map").on('click', ".report", function() {
+    $('html, body').animate({
+        scrollTop: $(".graph-container").offset().top
+    }, 500);
+});
+
+$(".segment_map").on('click', ".report", buttonGenerate);
+$(".graph-container").on('click', "#alert", sendAlerts);
 
 });
 
@@ -46,7 +50,8 @@ var popups = function () {
                        '<h3>' + properties.name + '</h3>' +
                        '<p>' + properties.handle + '</p>' + 
                        '<h2>' + properties.content + '</h2>' + 
-                       '<center><button class="report">Analyze Tweet</button></center>' +
+                       '<p>Datetime:  ' + properties.date_tweeted + '</p>' +
+                       '<center><button class="report">View Analysis</button></center>' +
                     '</div>');
     // graphGenerate();
     return marker.bindPopup(popupContent, {
@@ -197,7 +202,12 @@ var graphGenerate = function () {
 //     $('html,body').animate({scrollTop: divTag.offset().top},'slow');
 // }
 
+// Send Twilio Alerts
+var buttonGenerate = function () { 
+  $("#buttonspace").append("<p id='description'>Press button to alert friends, family, and closest police station</p>");
+  // $("#alertbutton").append("<button id='alert'>Send Alerts</button>");
+}
 
-
-
-
+var sendAlerts = function () { 
+  alert("Alert has been sent family, friends, and law enforcement");
+}

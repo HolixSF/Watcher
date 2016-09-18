@@ -6,7 +6,7 @@ class CreateTweets < ActiveRecord::Migration[5.0]
       t.text :content
       t.float :longitude
       t.float :latitude
-      t.date :date_tweeted
+      t.string :date_tweeted
       t.float :anger
       t.float :disgust
       t.float :fear
