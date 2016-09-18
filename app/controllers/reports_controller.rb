@@ -17,6 +17,7 @@ class ReportsController < ApplicationController
           name: tweet.name,
           handle: tweet.handle,
           content: tweet.content,
+          date_tweeted: tweet.date_tweeted,
           :'marker-color' => '#ec2660',
           :'marker-symbol' => 'circle',
           :'marker-size' => 'medium'

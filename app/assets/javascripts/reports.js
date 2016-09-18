@@ -47,7 +47,8 @@ var popups = function () {
                        '<h3>' + properties.name + '</h3>' +
                        '<p>' + properties.handle + '</p>' + 
                        '<h2>' + properties.content + '</h2>' + 
-                       '<center><button class="report">Analyze Tweet</button></center>' +
+                       '<p>Datetime:  ' + properties.date_tweeted + '</p>' +
+                       '<center><button class="report">View Analysis</button></center>' +
                     '</div>');
     // graphGenerate();
     return marker.bindPopup(popupContent, {
