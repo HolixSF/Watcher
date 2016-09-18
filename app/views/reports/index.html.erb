@@ -125,8 +125,6 @@
 	    var map = L.mapbox.map('map', 'mapbox.light')
 	        .setView([37.77, -122.4194], 14);
 	    </script>
-
-
 </div>
 <!-- graphs -->
 <div class="main-g-container" id="anchor2">
@@ -265,5 +263,12 @@
 </div>
 
 <div class="segment_below_graph">
-
+	<% @tweet_list.each_with_index do |t, i| %>
+			<div class="tweet-item <%= i.even? ? 't-left' : 't-right' %>" >
+				<div class="metweetright"></div>
+				<h3 class="tweet-name"><%=t[:name]%></h3>
+				<p class="tweet-handle"><%=t[:handle]%></p>
+				<h2 class="tweet-content"><%=t[:content]%></h2>
+		</div>
+	<% end %>
 </div>

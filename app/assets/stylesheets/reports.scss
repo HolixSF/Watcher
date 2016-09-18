@@ -25,7 +25,7 @@ $primary_dark_wat: #1881f3;
 
 .title {
 	padding-top: 100px;
-	margin: 0 auto; 
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -95,9 +95,9 @@ $primary_dark_wat: #1881f3;
 	background-color: #07171c;
 	width: 93%;
 	height: 13px;
-	// border-top-left-radius: 15px; 
+	// border-top-left-radius: 15px;
 	// border-top-right-radius: 15px;
-	opacity: 0.5; 
+	opacity: 0.5;
 	margin: 0 auto;
 	// border-top: 1px;
 	// border-right: 0px;
@@ -119,8 +119,8 @@ $primary_dark_wat: #1881f3;
 	// border-bottom: 0px;
 	// border-style: solid;
 	// border-color: $splash_wat;
-	// border-top-left-radius: 15px; 
-	// border-top-right-radius: 15px; 
+	// border-top-left-radius: 15px;
+	// border-top-right-radius: 15px;
 	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	margin: 0 auto;
 
@@ -136,9 +136,9 @@ $primary_dark_wat: #1881f3;
 	border-bottom: 0px;
 	border-style: solid;
 	border-color: $splash_wat;
-	// border-top-left-radius: 20px; 
+	// border-top-left-radius: 20px;
 	// border-top-right-radius: 20px;
-	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+	box-shadow: 0 -14px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .report_icon_background {
@@ -151,7 +151,7 @@ $primary_dark_wat: #1881f3;
 	border-radius: 50%;
 	position: absolute;
 	top: 1095px;
-	left: 48%; 
+	left: 48%;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -200,8 +200,9 @@ $primary_dark_wat: #1881f3;
 }
 
 .segment_below_graph {
-	height: 500;
-	background-color: red;
+	padding-top: 60px;
+	background-color: #ec2660;
+	height: 2200px;
 }
 
 .metweet {
@@ -209,10 +210,33 @@ $primary_dark_wat: #1881f3;
 	width: 64px;
 	height: 64px;
 	background-size: cover;
-	position:fixed;
+	position: fixed;
 	top: -23px;
 	left: -23px;
 }
+
+
+.metweetleft {
+	background-image: url("/assets/tweet.png");
+	width: 64px;
+	height: 64px;
+	background-size: cover;
+	position:fixed;
+	top: -100px;
+	left: -200px;
+}
+
+
+.metweetright {
+	background-image: url("/assets/tweet.png");
+	width: 90px;
+	height: 90px;
+	background-size: cover;
+	position: absolute;
+	margin-left: 79%;
+	margin-top: 15px;
+}
+
 
 .popup h3 {
 	text-align: center;
@@ -231,7 +255,7 @@ $primary_dark_wat: #1881f3;
 	display: inline-block;
 	padding: 30px;
 	// padding-left: 50px;
-	// padding-right: 50px; 
+	// padding-right: 50px;
 }
 
 .arrow {
@@ -244,7 +268,7 @@ $primary_dark_wat: #1881f3;
 }
 
 .item p {
-	width: 180px; 
+	width: 180px;
 	word-wrap: break-word;
 	text-align: left;
 }
@@ -273,6 +297,3 @@ $primary_dark_wat: #1881f3;
 	width: 132px;
 	height: 132px;
 }
-
-
-
