@@ -18,6 +18,3 @@
 //= require scrollReveal
 //= require_tree .
 
-$(function() {
-  window.scrollReveal = new scrollReveal();
-});
