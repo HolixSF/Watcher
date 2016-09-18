@@ -15,9 +15,7 @@ class Report < ApplicationRecord
     @client.account.messages.create(
       from: '+17605465153',
       to: '+17605229866',
-      body: 'This is an alert by The Watch. People who care about you 
-              will follow up with you shortly. In the mean time, please stay where you are 
-              and refrain from harming yourself.'
+      body: 'This is an alert by The Watch. People who care about you will follow up with you shortly. In the mean time, please stay where you are and refrain from harming yourself.'
     )
     
   end 
