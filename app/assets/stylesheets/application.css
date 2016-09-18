@@ -102,7 +102,7 @@ a:active {
   margin: 0 auto;
   text-align: center;
 /*  padding-left: 80px;
-  
+
   padding-right: 80px;*/
  /* margin-top: 5%;*/
   padding-top: 50px;
@@ -148,4 +148,41 @@ a:active {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+.tweet-item {
+  width: 45%;
+  color: #0d2a33;
+  display: inline-block;
+  margin-bottom: 60px;
+  background: white;
+  border-bottom: solid 60px #0d2a33;
+  border-radius: 30px;
+  height: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tweet-name {
+  margin-top: 60px;
+}
+
+.tweet-handle {
+  color: #ec2660;
+}
+
+.t-left {
+  float: left;
+  margin-left: 240px;
+  -webkit-box-shadow: -9px 10px 48px -4px rgba(0,0,0,0.95);
+  -moz-box-shadow: -9px 10px 48px -4px rgba(0,0,0,0.95);
+  box-shadow: -9px 10px 48px -4px rgba(0,0,0,0.95);
+}
+
+.t-right {
+  float: right;
+  margin-right: 240px;
+  -webkit-box-shadow: 10px 10px 48px -4px rgba(0,0,0,0.95);
+  -moz-box-shadow: 10px 10px 48px -4px rgba(0,0,0,0.95);
+  box-shadow: 10px 10px 48px -4px rgba(0,0,0,0.95);
 }
