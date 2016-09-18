@@ -223,12 +223,30 @@ $primary_dark_wat: #1881f3;
   -webkit-animation-delay: 11s;
 }
 
+.splash_container {
+	text-align: center;
+}
+
 .item {
 	display: inline-block;
+	padding: 30px;
+	// padding-left: 50px;
+	// padding-right: 50px; 
+}
+
+.arrow {
+	width: 18px;
+	height: 18px;
+	background-image: url("/assets/forward.png");
+	background-repeat: no;
+	background-size: cover;
+	margin-bottom: 50px;
 }
 
 .item p {
-	width: 50px; 
+	width: 180px; 
+	word-wrap: break-word;
+	text-align: left;
 }
 
 .tweet_splash {
@@ -245,8 +263,9 @@ $primary_dark_wat: #1881f3;
 
 .uni_splash {
 	background-image: url("/assets/uc_icon.png");
-	width: 132px;
+	width: 122px;
 	height: 132px;
+	background-size: cover;
 }
 
 .theWatch_splash {
