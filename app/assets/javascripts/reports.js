@@ -17,7 +17,7 @@ $(".segment_map").on('click', ".report", graphGenerate);
 $(".segment_map").on('click', ".report", function() {
     $('html, body').animate({
         scrollTop: $(".graph-container").offset().top
-    }, 2000);
+    }, 500);
 });
 
 
