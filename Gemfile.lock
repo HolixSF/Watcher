@@ -174,7 +174,11 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   dotenv-rails
   faker
+<<<<<<< HEAD
   httparty
+=======
+  httparty (~> 0.14.0)
+>>>>>>> 5c6e2aa001048caa92acd9fe8b30b08178ebd198
   jbuilder (~> 2.5)
   jquery-rails
   json

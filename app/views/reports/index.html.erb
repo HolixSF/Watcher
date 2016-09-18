@@ -8,21 +8,32 @@
 						</h1>
 					</div>
 					<script>
-	  				$(function(){
-	      			$(".phase_input").typed({
-	        			strings: ["Violence", "Cyber Bully", "Domestic Violence", "Drug Abuse", "Suicide"],
-	        			typeSpeed: 10,
-								startDelay: 5,
-	      			});
-	  				});
+					$(function(){
+						$(".phase_input").typed({
+							strings: ["Violence", "Cyber Bullying", "Domestic Abuse", "Suicide"],
+							typeSpeed: 10,
+							startDelay: 0,
+						});
+					});
 					</script>
 					<div class="phrase-input">
 						<span contenteditable="true" class="phase_input">Suicide</span>
 					</div>
 				</div>
 				<div class="form_container">
+					<script>
+					$(function(){
+						$("#search-box").click(function(){
+							$("#search-box").typed({
+								strings: ["I feel empty"],
+								typeSpeed: 10,
+								startDelay: 0,
+							});
+						});
+					});
+					</script>
 					<form class="query-form hidden">
-						<input type="text" name="query">
+						<input id="search-box" type="text" name="query">
 						<br>
 						<button type="button">
 							Get Report
@@ -32,12 +43,12 @@
 			</div>
 	</div>
 </div>
-<div class="divider">	
+<div class="divider">
 </div>
 
 <!-- reports start here -->
-<div class="report_container_shadow1"></div>
-<div class="report_container_shadow2"></div>
+<!-- <div class="report_container_shadow1"></div>
+<div class="report_container_shadow2"></div> -->
 <div class="report_container">
 	<div class="report_icon_background">
 		<div class="report_icon"></div>
@@ -66,19 +77,9 @@
 	    </script>
 
 
-<div>
-    <meta charset=utf-8 />
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-
 </div>
-
-
+<!-- graphs -->
 <div class="main-g-container">
-	<div class="text-left">
-		<p>
-			lefttttttt
-		</p>
-	</div>
 	<div class="graph-container">
 		<div class="donut-container">
 	    <canvas id="myChart"></canvas>
@@ -89,33 +90,62 @@
 	  <div class="donut-container">
 	    <canvas id="myChart3"></canvas>
 	  </div>
+
 	  <script>
 	    var ctx = document.getElementById("myChart");
 	    var doughnutOptions = {
 	      responsive: true,
 	      maintainAspectRatio: false,
+	      title: {
+            text: 'Language Style',
+            display: true,
+        },
+	      legend: {
+	            display: false,
+	          }
+	    };
+
+	    var doughnutOptions2 = {
+	      responsive: true,
+	      maintainAspectRatio: false,
+	      title: {
+            text: 'Emotion',
+            display: true,
+        },
+	      legend: {
+	            display: false,
+	          }
+	    };
+
+	     var doughnutOptions3 = {
+	      responsive: true,
+	      maintainAspectRatio: false,
+	      title: {
+            text: 'Social Tendencies',
+            display: true,
+        },
 	      legend: {
 	            display: false,
 	          }
 	    };
 	    var data = {
 	        labels: [
-	            "Red",
-	            "Blue",
-	            "Yellow"
+	            "Tentative",
+	            "Confident",
+	            "Analytical"
 	        ],
 	        datasets: [
 	            {
 	                data: [300, 50, 100],
 	                backgroundColor: [
-	                    "#FF6384",
-	                    "#36A2EB",
-	                    "#FFCE56"
+	                    "#EC2660",
+	                    "#4296F6",
+	                    "#D3D3D3"
 	                ],
 	                hoverBackgroundColor: [
-	                    "#FF6384",
-	                    "#36A2EB",
-	                    "#FFCE56"
+	                    "#EC2660",
+	                    "#4296F6",
+	                    "#D3D3D3"
 	                ]
 	            }]
 	    };
@@ -128,64 +158,62 @@
 	    var ctx = document.getElementById("myChart2");
 	    var data = {
 	        labels: [
-	            "Red",
-	            "Blue",
-	            "Yellow"
+	            "Fear",
+	            "Sadness",
+	            "Anger"
 	        ],
 	        datasets: [
 	            {
 	                data: [100, 200, 50],
 	                backgroundColor: [
-	                    "#FF6384",
-	                    "#36A2EB",
-	                    "#FFCE56"
+	                    "#EC2660",
+	                    "#4296F6",
+	                    "#D3D3D3"
 	                ],
 	                hoverBackgroundColor: [
-	                    "#FF6384",
-	                    "#36A2EB",
-	                    "#FFCE56"
+	                   	"#EC2660",
+	                    "#4296F6",
+	                    "#D3D3D3"
 	                ]
 	            }]
 	    };
 	    var myDoughnutChart = new Chart(ctx, {
 	        type: 'doughnut',
 	        data: data,
-	        options: doughnutOptions
+	        options: doughnutOptions2
 	    });
 
 	    var ctx = document.getElementById("myChart3");
 	    var data = {
 	        labels: [
-	            "Red",
-	            "Blue",
-	            "Yellow"
+	            "Agreeableness",
+	            "Emotional",
+	            "Extraversion"
 	        ],
 	        datasets: [
 	            {
 	                data: [50, 300, 100],
 	                backgroundColor: [
-	                    "#FF6384",
-	                    "#36A2EB",
-	                    "#FFCE56"
+	                    "#EC2660",
+	                    "#4296F6",
+	                    "#D3D3D3"
 	                ],
 	                hoverBackgroundColor: [
-	                    "#FF6384",
-	                    "#36A2EB",
-	                    "#FFCE56"
+	                    "#EC2660",
+	                    "#4296F6",
+	                    "#D3D3D3"
+
 	                ]
 	            }]
 	    };
 	    var myDoughnutChart = new Chart(ctx, {
 	        type: 'doughnut',
 	        data: data,
-	        options: doughnutOptions
+	        options: doughnutOptions3
 	    });
 	  </script>
-	</div>
-	<div class="text-right">
-		<p>
-			righttttttt
-		</p>
-	</div>
 </div>
 
+<div class="segment_below_graph">
+
+</div>
