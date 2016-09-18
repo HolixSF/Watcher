@@ -60,8 +60,6 @@
 			<div class="the_watch_list_title" id="watch_id">
 				<h1>The Watch List</h1>
 			</div>
-		<%#= scroll_reveal(animation: "enter bottom, after .1s, reset true" ) do %>
-	    <%# end %>
 	</div>
 </div>
 <div class="segment_map full_height_segment" id="anchor2">
@@ -79,12 +77,21 @@
     <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoidGNodWE5MyIsImEiOiJjaXQ3ankweGwwOWk0MnpwMWtteXZiZDZ6In0.OzMTTCLho3ssVmn4blTBNA';
     var map = L.mapbox.map('map', 'mapbox.light')
-        .setView([37.7863, -122.395619], 16);   
+        .setView([37.7863, -122.395619], 13);   
 	  map.doubleClickZoom.disable();
 	  map.scrollWheelZoom.disable();
     </script>
 	</div>
 	<!-- graphs -->
+
+	<div class="report_container colored vertical_flex">
+		<div class="center_icon">
+			<div class="report_icon_background animated pulse infinite">
+				<div class="report_icon"></div>
+			</div>
+		</div>
+	</div>
+
 	<div class="main-g-container">
 		<div class="graph-container">
 			<div class="donut-container">
@@ -97,17 +104,20 @@
 		    <canvas id="myChart3"></canvas>
 		  </div>
 	  </div>
-
-	  <div id="buttonspace">
-	  	<p id="buttondescribe"></p>
-	  	<div id="alertbutton">
-	  		<form id="formalert" method="Post" action="/">
-	  			<button id='alert'>Send Alerts</button>
-	  		</form>
-	  	</div>
+	  <div class="twillio_container">
+		  <div id="buttonspace">
+		  	<p id="buttondescribe"></p>
+		  	<div id="alertbutton">
+		  		<form id="formalert" method="Post" action="/">
+		  			<button id='alert'>Press button to alert friends</button>
+		  		</form>
+		  		<p id='description' class="hidden"></p>
+		  	</div>
+		  </div>
 	  </div>
 	</div>
 </div>
+
 
 <div class="segment_below_graph">
 	<% @tweet_list.each_with_index do |t, i| %>

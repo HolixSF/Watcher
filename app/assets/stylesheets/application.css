@@ -186,3 +186,14 @@ a:active {
   -moz-box-shadow: 10px 10px 48px -4px rgba(0,0,0,0.95);
   box-shadow: 10px 10px 48px -4px rgba(0,0,0,0.95);
 }
+
+.twillio_container {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.twillio_container p {
+  margin: 0;
+}
+

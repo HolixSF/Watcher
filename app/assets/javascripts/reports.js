@@ -12,14 +12,14 @@ $(document).ready(function() {
 
   centerMap();
   popups();
-
+  graphGenerate();
 $(".segment_map").on('click', ".report", graphGenerate);
 
-$(".segment_map").on('click', ".report", function() {
-    $('html, body').animate({
-        scrollTop: $(".graph-container").offset().top
-    }, 500);
-});
+// $(".segment_map").on('click', ".report", function() {
+//     $('html, body').animate({
+//         scrollTop: $(".graph-container").offset().top
+//     }, 500);
+// });
 
 $(".segment_map").on('click', ".report", buttonGenerate);
 $(".graph-container").on('click', "#alert", sendAlerts);
@@ -31,7 +31,7 @@ $(".graph-container").on('click', "#alert", sendAlerts);
 var centerMap = function () {
   map.featureLayer.on('click', function(e) {
     latlng = e.layer.getLatLng();
-    latlng.lat += 0.0022; // Magic number
+    latlng.lat += 0.012; // Magic number
     map.panTo(latlng);
   });
 
@@ -204,7 +204,7 @@ var graphGenerate = function () {
 
 // Send Twilio Alerts
 var buttonGenerate = function () { 
-  $("#buttonspace").append("<p id='description'>Press button to alert friends, family, and closest police station</p>");
+  // $("#buttonspace").append("<p id='description'>Press button to alert friends, family, and closest police station</p>");
   // $("#alertbutton").append("<button id='alert'>Send Alerts</button>");
 }
 
