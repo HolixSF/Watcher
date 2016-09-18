@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'httparty', '~> 0.14.0'
 
+gem "animate-rails"
 
 gem 'json'
 

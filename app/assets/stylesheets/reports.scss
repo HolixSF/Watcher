@@ -81,7 +81,7 @@ $primary_dark_wat: #1881f3;
 	font-size: 1.2em;
 	color: white;
 	height: 40px;
-	width: 130px;
+	width: 190px;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -217,5 +217,12 @@ $primary_dark_wat: #1881f3;
 .popup h3 {
 	text-align: center;
 }
+
+#report_button {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 11s;
+}
+
+
 
 
