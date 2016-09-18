@@ -26,7 +26,13 @@ var popups = function () {
     var marker, popupContent, properties;
     marker = e.layer;
     properties = marker.feature.properties;
-    popupContent = '<div class="popup">' + '<h3>' + properties.name + '</h3>' + '<p>' + properties.handle + '</p>' + '<h2>' + properties.content + '</h2>' + '</div>';
+    popupContent = (
+    								'<div class="popup">' +
+    									'<div class="metweet"></div>' +
+                       '<h3>' + properties.name + '</h3>' +
+                       '<p>' + properties.handle + '</p>' + 
+                       '<h2>' + properties.content + '</h2>' + 
+                    '</div>');
     return marker.bindPopup(popupContent, {
       closeButton: false,
       minWidth: 320
