@@ -12,27 +12,59 @@
   </head>
 
   <body>
-  	<div class="navigation_container">
-  		<div class="icon_containter">
-	  		<div class="icon">
-	  		</div>
-	  		<div class="icon_text">
-	  			<p>The Watch</p>
-	  		</div>
-  		</div>
+    <div class="full_height_segment">
+    	<div class="navigation_container">
+    		<div class="icon_containter">
+  	  		<div class="icon">
+  	  		</div>
+  	  		<div class="icon_text">
+  	  			<p>The Watch</p>
+  	  		</div>
+    		</div>
 
-  		<div class="right_container">
-  			<a href="#"><p>
-  				sign up
-  			</p></a>
-  			<p>
-  				|
-  			</p>
-  			<a href="#"<p>
-  				profile
-  			</p></a>
-  		</div>
-  	</div>
+    		<div class="right_container">
+    			<a href="#"><p>
+    				sign up
+    			</p></a>
+    			<p>
+    				|
+    			</p>
+    			<a href="#"<p>
+    				profile
+    			</p></a>
+    		</div>
+    	</div>
+      <div class="container">
+        <div class="spalsh_image_container">
+          <div class="center">
+            <div class="title">
+              <div class="phrase">
+                <h1>
+                  Prevent
+                </h1>
+              </div>
+              <script>
+                $(function(){
+                  $(".phase_input").typed({
+                    strings: ["Violence", "Cyber Bullying", "Domestic Abuse", "Suicide"],
+                    typeSpeed: 10,
+                    startDelay: 2000,
+                  });
+                });
+              </script>
+              <div class="phrase-input">
+                <span contenteditable="true" class="phase_input"></span>
+              </div>
+            </div>
+            <div class="form_container">
+                <button type="button" id="report_button" class="animated swing">
+                  Get Report
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

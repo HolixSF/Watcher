@@ -23,10 +23,9 @@ class ReportsController < ApplicationController
 
 		@tweet_list = Array.new
 
-		@geojson[30..34].each do |tweet|
+		@geojson[0..5].each do |tweet|
 			@tweet_list << tweet[:properties]
 		end
-
 
 	end
 
