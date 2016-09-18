@@ -45,3 +45,22 @@
 .hleft {
   padding-bottom: 50px;
 }*/
+.fooot a:link {
+   text-decoration: none;
+   color: white;
+}
+
+.fooot a:visited {
+   text-decoration: none;
+   color: white;
+}
+
+.fooot a:hover {
+   text-decoration: none;
+   color: #ec2660;
+}
+
+.fooot a:active {
+   text-decoration: none;
+   color: white;
+}
