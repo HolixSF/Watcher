@@ -17,9 +17,9 @@ end
 
 #driver 
 
-helper = Watsonhelper.new
+# helper = Watsonhelper.new
 
-p helper.wat("I want to kill myself")
+# p helper.wat("I want to kill myself")
 
 
 end
