@@ -14,6 +14,15 @@ $(document).ready(function() {
   centerMap();
   popups();
 $(".segment_map").on('click', ".report", graphGenerate);
+$(".segment_map").on('click', ".report", function() {
+    $('html, body').animate({
+        scrollTop: $(".graph-container").offset().top
+    }, 2000);
+});
+
+
+
+
 
 });
 
@@ -24,129 +33,6 @@ var centerMap = function () {
         map.panTo(e.layer.getLatLng());
     });
 }
-
-// var graphGenerate = function () { 
-//     console.log("hit");
-//       var ctx = document.getElementById("myChart");
-//       var doughnutOptions = {
-//         responsive: true,
-//         maintainAspectRatio: false,
-//         title: {
-//             text: 'Language Style',
-//             display: true,
-//         },
-//         legend: {
-//               display: false,
-//             }
-//       };
-
-//       var doughnutOptions2 = {
-//         responsive: true,
-//         maintainAspectRatio: false,
-//         title: {
-//             text: 'Emotion',
-//             display: true,
-//         },
-//         legend: {
-//               display: false,
-//             }
-//       };
-
-//        var doughnutOptions3 = {
-//         responsive: true,
-//         maintainAspectRatio: false,
-//         title: {
-//             text: 'Social Tendencies',
-//             display: true,
-//         },
-//         legend: {
-//               display: false,
-//             }
-//       };
-//       var data = {
-//           labels: [
-//               "Tentative",
-//               "Confident",
-//               "Analytical"
-//           ],
-//           datasets: [
-//               {
-//                   data: [300, 50, 100],
-//                   backgroundColor: [
-//                       "#EC2660",
-//                       "#4296F6",
-//                       "#D3D3D3"
-//                   ],
-//                   hoverBackgroundColor: [
-//                       "#EC2660",
-//                       "#4296F6",
-//                       "#D3D3D3"
-//                   ]
-//               }]
-//       };
-//       var myDoughnutChart = new Chart(ctx, {
-//           type: 'doughnut',
-//           data: data,
-//           options: doughnutOptions
-//       });
-
-//       var ctx = document.getElementById("myChart2");
-//       var data = {
-//           labels: [
-//               "Fear",
-//               "Sadness",
-//               "Anger"
-//           ],
-//           datasets: [
-//               {
-//                   data: [100, 200, 50],
-//                   backgroundColor: [
-//                       "#EC2660",
-//                       "#4296F6",
-//                       "#D3D3D3"
-//                   ],
-//                   hoverBackgroundColor: [
-//                       "#EC2660",
-//                       "#4296F6",
-//                       "#D3D3D3"
-//                   ]
-//               }]
-//       };
-//       var myDoughnutChart = new Chart(ctx, {
-//           type: 'doughnut',
-//           data: data,
-//           options: doughnutOptions2
-//       });
-
-//       var ctx = document.getElementById("myChart3");
-//       var data = {
-//           labels: [
-//               "Agreeableness",
-//               "Emotional",
-//               "Extraversion"
-//           ],
-//           datasets: [
-//               {
-//                   data: [50, 300, 100],
-//                   backgroundColor: [
-//                       "#EC2660",
-//                       "#4296F6",
-//                       "#D3D3D3"
-//                   ],
-//                   hoverBackgroundColor: [
-//                       "#EC2660",
-//                       "#4296F6",
-//                       "#D3D3D3"
-
-//                   ]
-//               }]
-//       };
-//       var myDoughnutChart = new Chart(ctx, {
-//           type: 'doughnut',
-//           data: data,
-//           options: doughnutOptions3
-//   });
-// };
 
 
 var popups = function () {
@@ -306,3 +192,13 @@ var graphGenerate = function () {
           options: doughnutOptions3
   });
 };
+
+// function scrollToAnchor(spot){
+//     var divTag = $("div[class='" + spot +"']");
+//     $('html,body').animate({scrollTop: divTag.offset().top},'slow');
+// }
+
+
+
+
+
