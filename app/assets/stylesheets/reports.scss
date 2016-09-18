@@ -148,7 +148,7 @@ $primary_dark_wat: #1881f3;
 	border-radius: 50%;
 	position: absolute;
 	left: 50%;
-	transform: translateX(-30px); 
+	transform: translateX(-30px);
 	top: -30px;
 }
 
@@ -256,6 +256,11 @@ $primary_dark_wat: #1881f3;
 }
 
 #report_button {
+	width: 15%;
+	border-radius: 10px;
+	height: 55px;
+	background: #4296f6;
+	margin: 0 auto;
   -webkit-animation-duration: 0.5s;
   -webkit-animation-delay: 11s;
 }
