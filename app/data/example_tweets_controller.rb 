@@ -1,0 +1,22 @@
+@tweets = Tweets.all
+@geojson = Array.new
+
+@tweets.each do |tweet|
+  @geojson << {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [tweet.longitude, tweet.latitude]
+    },
+    properties: {
+      name: tweet.user_name,
+      address: tweet.street,
+      :'marker-color' => '#00607d',
+      :'marker-symbol' => 'circle',
+      :'marker-size' => 'medium'
+    }
+  }
+end
+
+#We may not need the tweet address if we have the coordinates
+
