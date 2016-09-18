@@ -223,6 +223,37 @@ $primary_dark_wat: #1881f3;
   -webkit-animation-delay: 11s;
 }
 
+.item {
+	display: inline-block;
+}
+
+.item p {
+	width: 50px; 
+}
+
+.tweet_splash {
+	background-image: url("/assets/twitter_icon.png");
+	width: 132px;
+	height: 132px;
+}
+
+.ibm_splash {
+	background-image: url("/assets/ibm_icon2.png");
+	width: 132px;
+	height: 132px;
+}
+
+.uni_splash {
+	background-image: url("/assets/uc_icon.png");
+	width: 132px;
+	height: 132px;
+}
+
+.theWatch_splash {
+	background-image: url("/assets/icon_report_icon.png");
+	width: 132px;
+	height: 132px;
+}
 
 
 
