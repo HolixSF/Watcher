@@ -50,16 +50,30 @@
 			</div>
 	</div>
 
-
 	<div class="report_container colored vertical_flex">
 		<div class="center_icon">
 			<div class="report_icon_background animated pulse infinite">
 				<div class="report_icon"></div>
 			</div>
 		</div>
+	</div>
+	<div class="report_border_container">
+		<div class="report_border">
 			<div class="the_watch_list_title" id="watch_id">
-				<h1>The Watch List</h1>
+				<h1>The Watch List Report</h1>
+				<div class="headers_container">	
+					<div class="line_block">
+						<p><%= Time.now.strftime("%m/%d/%Y") %></p>
+					</div>
+					<div class="line_block">
+						<p>The Watch found: <%= @tweets.count %> people at risk</p>
+					</div>
+					<div class="line_block">
+						<p> Avg saddness level of individuals is 75%</p>
+					</div>
+				</div>
 			</div>
+		</div>
 	</div>
 </div>
 <div class="segment_map full_height_segment" id="anchor2">
@@ -128,4 +142,16 @@
 			<h2 class="tweet-content"><%=t[:content]%></h2>
 		</div>
 	<% end %>
+</div>
+
+<div class="footer-section">
+	<div class="fooot">
+		<p>Link to Study</p>
+	</div>
+	<div class="fooot">
+		<p>Print to PDF</p>
+	</div>
+	<div class="fooot">
+		<p>Contact Authorities</p>
+	</div>
 </div>

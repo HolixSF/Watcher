@@ -206,6 +206,8 @@ $primary_dark_wat: #1881f3;
                -10px 20px 5px rgba(0,0,0,0.05);
 }
 .the_watch_list_title h1 {
+	
+	padding-top: 100px;
 	font-size: 2.5em;
 }
 
@@ -234,7 +236,7 @@ $primary_dark_wat: #1881f3;
 .segment_below_graph {
 	padding-top: 60px;
 	background-color: #ec2660;
-	height: 2200px;
+	height: 2600px;
 }
 
 .metweet {
@@ -367,4 +369,35 @@ $primary_dark_wat: #1881f3;
 
 #formalert {
 	width: 350px;
+}
+
+.report_border_container {
+	background-color: $dark_blue_wat;
+}
+
+.report_border {
+	height: 300px;
+	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+	background-color: $splash_wat;
+	box-shadow: 0 -30px -28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-top: 3px;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+	border-style: solid;
+	border-color: white;
+}
+
+.headers_container {
+}
+
+.line_block {
+	display: inline-block;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.line_block p {
+	font-size: 1.5em;
 }
