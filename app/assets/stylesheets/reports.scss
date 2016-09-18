@@ -184,14 +184,14 @@ $primary_dark_wat: #1881f3;
 	background-color: $dark_blue_wat;
 }
 .map_container {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	background-color: $dark_blue_wat;
 }
 
 #map {
 	border-radius: 10px;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	// box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .graph-container {
@@ -201,7 +201,6 @@ $primary_dark_wat: #1881f3;
 
 .segment_below_graph {
 	height: 500;
-	background-color: red;
 }
 
 .metweet {
@@ -223,6 +222,62 @@ $primary_dark_wat: #1881f3;
   -webkit-animation-delay: 11s;
 }
 
+.splash_container {
+	border: 4px;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-style: solid;
+	border-color: $splash_wat;
+	text-align: center;
+}
+
+.item {
+	display: inline-block;
+	padding: 30px;
+	// padding-left: 50px;
+	// padding-right: 50px; 
+}
+
+.arrow {
+	width: 18px;
+	height: 18px;
+	background-image: url("/assets/right-arrow.png");
+	background-repeat: no;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+.item p {
+	width: 180px; 
+	word-wrap: break-word;
+	text-align: left;
+}
+
+.tweet_splash {
+	background-image: url("/assets/twitter_icon.png");
+	width: 132px;
+	height: 132px;
+}
+
+.ibm_splash {
+	background-image: url("/assets/ibm_icon2.png");
+	width: 132px;
+	height: 132px;
+}
+
+.uni_splash {
+	background-image: url("/assets/uc_icon.png");
+	width: 122px;
+	height: 122px;
+	background-size: cover;
+}
+
+.theWatch_splash {
+	background-image: url("/assets/icon_report_icon.png");
+	width: 132px;
+	height: 132px;
+}
 
 
 
